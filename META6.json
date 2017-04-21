@@ -1,24 +1,36 @@
 {
-  "perl" : "6.c",
-  "name" : "Linux::Cpuinfo",
-  "description" : "Get the kernel CPU information on Linux",
-  "tags" : [ "linux", "system", "utils", "cpu" ],
-  "authors" : [ "Jonathan Stowe <jns+git@gellyfish.co.uk>" ],
-  "author" : "Jonathan Stowe <jns+git@gellyfish.co.uk>",
-  "auth" : "github:jonathanstowe",
-  "version" : "0.0.7",
-  "build-depends" : [ 
-   ],
-  "test-depends" : [
+  "name": "Linux::Cpuinfo",
+  "perl": "6.c",
+  "support": {
+    "source": "https://github.com/samcv/p6-Linux-Cpuinfo",
+    "bugtracker": "https://github.com/samcv/p6-Linux-Cpuinfo/issues"
+  },
+  "source-url": "git://github.com/samcv/p6-Linux-Cpuinfo.git",
+  "author": "Jonathan Stowe <jns+git@gellyfish.co.uk>",
+  "build-depends": [
+    
+  ],
+  "auth": "github:samcv",
+  "depends": [
+    
+  ],
+  "license": "Artistic-2.0",
+  "tags": [
+    "linux",
+    "system",
+    "utils",
+    "cpu"
+  ],
+  "test-depends": [
     "Test"
   ],
-  "depends" : [ ],
-  "provides" : {
-    "Linux::Cpuinfo::Cpu" : "lib/Linux/Cpuinfo/Cpu.pm",
-    "Linux::Cpuinfo" : "lib/Linux/Cpuinfo.pm"
+  "provides": {
+    "Linux::Cpuinfo": "lib/Linux/Cpuinfo.pm",
+    "Linux::Cpuinfo::Cpu": "lib/Linux/Cpuinfo/Cpu.pm"
   },
-  "support" : {
-    "source" : "git://github.com/jonathanstowe/p6-Linux-Cpuinfo.git"
-  },
-  "source-url" : "https://github.com/jonathanstowe/p6-Linux-Cpuinfo.git"
+  "version": "0.0.7",
+  "description": "Get the kernel CPU information on Linux",
+  "authors": [
+    "Jonathan Stowe <jns+git@gellyfish.co.uk>"
+  ]
 }
